@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body,html{
+    height: 100%;
+}
+
+.center{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{clear: both;}
+
+.header-mobile{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 0 2%;
+    height: 35px;
+
+    background-color: #FFF;
+    visibility: hidden;
+}
+
+.header-mobile img{
+    position: relative;
+    width: 100%;
+    height: 3em;
+    bottom: 0.3em;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 14em;
+}
+
+
+
+.form-login-mobile{
+    width: 90%;
+    
+}
+
+.login{
+    width: 30%;
+    height: 100%;
+    padding: 0 2%;
+    background-color: white;
+
+}
+
+.login img{
+    width: 5rem;
+
+}
+
+.header{
+    justify-content: center;
+    
+}
+
+.header i{
+    float: right;
+    padding-top: 30px;
+    margin: auto 0;
+    
+}
+
+
+.logo-header img{
+    position: absolute;
+    left: -30%;
+    bottom: -12%;
+    width: 100%;
+    height: 50px;
+}
+
+
+.form-login h2{
+    font-size: 1.6em;
+    letter-spacing: 3px;
+    margin-top: 10%;
+    margin-bottom: 1.3em;
+}
+
+.form-login-mobile h2{
+    color: white;
+}
+
+.form-login input[type=text],
+.form-login input[type=password],
+.form-login-mobile input{
+    margin-top: 15px;
+    display: block;
+    padding: 15px;
+    width: 100%;
+
+    
+    border-radius: 4px;
+}
+
+.form-login input[type=text],
+.form-login-mobile input[type=text]{
+    border: 1px solid black;
+    color: gray;
+}
+
+.form-login input[type=password],
+.form-login-mobile input[type=password]{
+    background-color: #ddd;
+    border: 0;
+}
+
+.form-login span input{
+    margin-top: 15%;
+    
+}
+
+.form-login span label{
+    margin-left: 0.4em;
+    font-weight: normal;
+    color: #ddd;
+    
+    transition: 0.2s;
+}
+
+.form-login span label:hover{
+    color: black;
+}
+
+
+.button a{
+    font-size: 60px;
+}
+
+.button i{
+    position: relative;
+    float: left;
+    color: #ddd;
+    left: 40%;
+    margin-top: 40px;
+    
+    transition: 0.2s;
+    
+}
+
+.button i:hover{
+    color: black;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+footer .settings{
+    position: relative;
+    bottom: 2em;
+}
+
+
+footer a{text-decoration: none;}
+
+footer p{
+    color: #ddd;
+    transition: 0.2s;
+}
+
+footer p:hover{
+    color: black;
+
+    transform: translateY(-3px);
+}
+
+.banner{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left: 30%;
+    width: 70%;
+    height: 100%; 
+
+    background-image: url(https://images7.alphacoders.com/108/1081001.jpg);
+    background-size: cover;
+    background-position: center;
+  
+}
+
+
+@media(max-width:600px){
+    .button i{left: 30%}
+
+    .form-login span label{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:500px){
+    .login{display: none;}
+
+    .banner{
+        left: 0;
+        width: 100%;
+
+    }
+
+    .header-mobile{
+        visibility: visible;
+       
+    }
+
+    .header-mobile h2{
+        font-size: 1.5em;
+    }
+
+    .form-login-mobile input{
+        width: 90%;   
+        margin-right: 0;  
+    }
+
+    .button i{
+      position: relative;
+    }
+
+}
+
+@media(max-width:150px){
+    .button a{
+        font-size: 30px;
+      }
+}
+
+
+
+
+
+
